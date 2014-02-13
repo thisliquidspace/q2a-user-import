@@ -45,6 +45,17 @@ Installation
 .. _github:
 .. _project page: https://github.com/KrzysztofKielce/q2a-backup
 
+------------
+CSV File format
+------------
+The CSV file should be of the format:
+
+"testuser1@example.com","<plain text password>","Test User 1"
+"testuser1@example.com","<plain text password>","Test User 2"
+"testuser1@example.com","<plain text password>","Test User 3"
+
+
+
 ----------
 Disclaimer
 ----------
