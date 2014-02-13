@@ -19,7 +19,7 @@ User Import plugin for Question2Answer CMS.
 Features
 --------
 
-- Bulk import users into Q2A
+- Bulk import users into Q2A via an uploaded CSV file
 - Automatically sends email to each user
 
 ------------
