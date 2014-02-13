@@ -37,12 +37,12 @@
 	Plugin Update Check URI:
 */
 
-    define("QA_USER_IMPORT_PARENT_DIR", "q2a-user-import");
-
 	if (!defined('QA_VERSION')) { // don't allow this page to be requested directly from browser
 		header('Location: ../../');
 		exit;
 	}
+
+    define("QA_USER_IMPORT_PARENT_DIR", "q2a-user-import");
 
 	qa_register_plugin_phrases('qa-user-import-lang-*.php', 'user_import_page');
 	qa_register_plugin_module('module', 'qa-user-import.php', 'qa_user_import', 'User Import Module');

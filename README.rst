@@ -32,7 +32,6 @@ Installation and use
      ``git clone git@github.com:thisliquidspace/q2a-user-import.git backup``
      at the command prompt (on Linux, Windows is a bit different)
    - To download directly, go to the `project page`_ and click **Download**
-   
 #. Navigate to your site, go to **Admin > Plugins** on your q2a install and go to section '**User Import**'
 #. Select a local CSV file (correctly formatted) via '**Browse**' and then '**Upload to server**'. The file should appear in the plugin window.
 #. Select the file via the corresponding radio button and then press '**Test selected file!**'.
