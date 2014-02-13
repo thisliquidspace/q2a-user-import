@@ -48,13 +48,9 @@ Installation
 ------------
 CSV File format
 ------------
-The CSV file should be of the format:
+The CSV file should be of the following format:
 
-"testuser1@example.com","<plain text password>","Test User 1"
-"testuser1@example.com","<plain text password>","Test User 2"
-"testuser1@example.com","<plain text password>","Test User 3"
-
-
+"<email address>","<plain text password>","<username>"
 
 ----------
 Disclaimer
@@ -71,9 +67,10 @@ Credits
 ---------
 Plugin based on https://github.com/KrzysztofKielce/q2a-backup
 
-Development sponsored by builtintelligence.com.
+Development sponsored by BuiltIntelligence (http://builtintelligence.com).
 
-Development carried out by thisliquidspace.com
+Development carried out by thisLiquidSpace (http://thisliquidspace.com)
+
 ---------
 About Q2A
 ---------
