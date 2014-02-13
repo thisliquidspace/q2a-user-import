@@ -23,7 +23,7 @@ Features
 - Automatically sends email to each user
 
 ------------
-Installation
+Installation and use
 ------------
 #. Install Question2Answer_
 #. Get the source code for this plugin from github_, either using git_, or downloading directly:
@@ -39,6 +39,7 @@ Installation
 #. Check the list generated for any badly formatted emails or illegal usernames.
 #. Select the file again (prevents accidents) via the corresponding radio button and then press '**Import selected file!**'.
 #. Your users will not receive the system standard sign-up email.
+#. Delete all of the CSV files from the system by clicking '**Delete all files**'.
 
 .. _Question2Answer: http://www.question2answer.org/install.php
 .. _git: http://git-scm.com/
@@ -48,9 +49,11 @@ Installation
 ------------
 CSV File format
 ------------
-The CSV file should be of the following format:
+The CSV file should consist of lines in the following format:
 
 "<email address>","<plain text password>","<username>"
+
+See test.csv for example.
 
 ----------
 Disclaimer

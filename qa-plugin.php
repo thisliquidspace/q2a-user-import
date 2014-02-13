@@ -44,8 +44,6 @@
 		exit;
 	}
 
-	//qa_register_plugin_layer('qa-user-import-layer.php', 'User Import Widget Form Layer');
-	qa_register_plugin_module('page', 'qa-user-import-page.php', 'qa_user_import_page', 'User Import');
 	qa_register_plugin_phrases('qa-user-import-lang-*.php', 'user_import_page');
 	qa_register_plugin_module('module', 'qa-user-import.php', 'qa_user_import', 'User Import Module');
 
