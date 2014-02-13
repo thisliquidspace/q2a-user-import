@@ -11,13 +11,9 @@ class qa_html_theme_layer extends qa_html_theme_base {
 	     * Solution was to override 'tags' within qa-user-import.php.
 	     */
 
-	    /*
-
-	     */
-
 		require_once QA_INCLUDE_DIR.'qa-app-admin.php';
 
-    	$plugin_contents = file_get_contents(QA_PLUGIN_DIR.'qa-user-import/qa-plugin.php');
+    	$plugin_contents = file_get_contents(QA_PLUGIN_DIR . QA_USER_IMPORT_PARENT_DIR . '/qa-plugin.php');
 
     	$metadata = qa_admin_addon_metadata($plugin_contents, array('name' => 'Plugin Name'));
 
@@ -41,7 +37,7 @@ class qa_html_theme_layer extends qa_html_theme_base {
 			  && ( strpos( $plugin_html, $plugin_name ) !== FALSE )
 		)
 		{
-			$form['tags'] = ' method="post" action="'.qa_admin_plugin_options_path(QA_PLUGIN_DIR . "/qa-user-import/").'" '.$form['tags']; // Admin panel form tags
+			$form['tags'] = ' method="post" action="'.qa_admin_plugin_options_path(QA_PLUGIN_DIR . "/" . QA_USER_IMPORT_PARENT_DIR . "/").'" '.$form['tags']; // Admin panel form tags
 		}
 		qa_html_theme_base::form($form);
 	}

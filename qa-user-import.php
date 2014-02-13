@@ -24,6 +24,12 @@
 	More about this license: http://www.question2answer.org/license.php
 */
 
+
+/*
+ * Plugin definitions
+ * TODO: Check if there is there is a better way of tackling this via Q2A API
+ */
+
 class qa_user_import {
 
 	var $urltoroot;
@@ -128,14 +134,14 @@ class qa_user_import {
 
 		return array(
 		    'ok' => $this->error ? '<span style="color:#f00;">ERROR: '.$this->error.'</span>' : ($this->msg ? $this->msg : null),
-		    'tags' => ' method="post" action="'.qa_admin_plugin_options_path(QA_PLUGIN_DIR . "qa-user-import/").'" enctype="multipart/form-data" ', // File upload form tags
+		    'tags' => ' method="post" action="'.qa_admin_plugin_options_path(QA_PLUGIN_DIR . QA_USER_IMPORT_PARENT_DIR . "/").'" enctype="multipart/form-data" ', // File upload form tags
 		    'fields' => array(
 				array(
 					'label' => $this->listedFiles,
 					'type' => 'static',
-					'value' => '<input type="file" name="userimport_upload_file" onmouseout="this.className=\'qa-form-tall-button qa-form-tall-button-0\';" onmouseover="this.className=\'qa-form-tall-hover qa-form-tall-hover-0\';" class="qa-form-tall-button qa-form-tall-button-0" /> '.
-							   '<input type="submit" value="Upload to server" name="userimport_send_upload_file" onmouseout="this.className=\'qa-form-tall-button qa-form-tall-button-0\';" onmouseover="this.className=\'qa-form-tall-hover qa-form-tall-hover-0\';" onclick="bck_t=\'\'" class="qa-form-tall-button qa-form-tall-button-0" /><br />'.
-							   '<input type="submit" value="Delete all files" name="userimport_delete_files" onmouseout="this.className=\'qa-form-tall-button qa-form-tall-button-0\';" onmouseover="this.className=\'qa-form-tall-hover qa-form-tall-hover-0\';" onclick="bck_t=\'delete all files from a backup folder\'" class="qa-form-tall-button qa-form-tall-button-0" />',
+					'value' => '<input type="file" name="userimport_upload_file" class="qa-form-tall-button qa-form-tall-button-0" /> '.
+							   '<input type="submit" value="Upload to server" name="userimport_send_upload_file" onclick="bck_t=\'\'" class="qa-form-tall-button qa-form-tall-button-0" /><br />'.
+							   '<input type="submit" value="Delete all files" name="userimport_delete_files" onclick="bck_t=\'delete all files from a backup folder\'" class="qa-form-tall-button qa-form-tall-button-0" />',
 					'tags' => 'NAME="userimport_importFile"',
 				),
 				array(
