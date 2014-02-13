@@ -44,7 +44,7 @@ Installation and use
 .. _Question2Answer: http://www.question2answer.org/install.php
 .. _git: http://git-scm.com/
 .. _github:
-.. _project page: https://github.com/KrzysztofKielce/q2a-backup
+.. _project page: https://github.com/thisliquidspace/q2a-user-import
 
 ------------
 CSV File format
@@ -70,9 +70,12 @@ Credits
 ---------
 Plugin based on https://github.com/KrzysztofKielce/q2a-backup
 
-Development sponsored by BuiltIntelligence (http://builtintelligence.com).
+Development sponsored by BuiltIntelligence_.
 
-Development carried out by thisLiquidSpace (http://thisliquidspace.com)
+Development carried out by thisLiquidSpace_
+
+.. _BuiltIntelligence: http://builtintelligence.com
+.. _thisLiquidSpace: http://thisliquidspace.com
 
 ---------
 About Q2A
@@ -80,6 +83,3 @@ About Q2A
 Question2Answer is a free and open source platform for Q&A sites. For more information, visit:
 
 http://www.question2answer.org/
-
-
-
