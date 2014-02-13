@@ -352,7 +352,11 @@ class qa_user_import {
 		        		$response = "Checked!";
 		        	}
 		        } else {
-		          $response = "<pre>".print_r($errors, 1)."</pre>";
+		          /* output the errors generated */
+		          $response = "";
+		          foreach($errors as $line) {
+		            $response .= $line ."<br />";
+		          }
 		        }
 
 		        /* show the data */
