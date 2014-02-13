@@ -7,6 +7,7 @@ Compatible with Q2A versions:
 -----------------------------
 
 - 1.6.1
+- 1.6.3
 
 -----------
 Description
