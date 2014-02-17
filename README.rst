@@ -6,8 +6,9 @@ q2a-user-import
 Compatible with Q2A versions:
 -----------------------------
 
-- 1.6.1
-- 1.6.3
+- 1.6.x
+-- 1.6.1 (Tested)
+-- 1.6.3 (Tested)
 
 -----------
 Description
