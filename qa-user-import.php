@@ -172,6 +172,17 @@ class qa_user_import {
 	{
 		$allowedExtensions = array("csv");
 
+        $allowedMimeTypes = array('text/csv',
+                                  'text/plain',
+                                  'application/csv',
+                                  'text/comma-separated-values',
+                                  'application/excel',
+                                  'application/vnd.ms-excel',
+                                  'application/vnd.msexcel',
+                                  'text/anytext',
+                                  'application/octet-stream',
+                                  'application/txt',);
+
 		$filenameParts = explode(".", $_FILES["userimport_upload_file"]["name"]);
 
 		$extension = end($filenameParts);
@@ -189,7 +200,7 @@ class qa_user_import {
 			$this->error = "No files selected. Please, select a file.<br />";
 			return;
 		}
-		if ($_FILES["userimport_upload_file"]["type"] != "application/csv") {
+		if (!in_array($_FILES["userimport_upload_file"]["type"], $allowedMimeTypes)) {
 			$this->error = "Wrong file type: ".$_FILES["userimport_upload_file"]["type"].". <br />You can only upload csv files!";
 			return;
 		}
