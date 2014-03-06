@@ -6,9 +6,8 @@ q2a-user-import
 Compatible with Q2A versions:
 -----------------------------
 
-- 1.6.x
--- 1.6.1 (Tested)
--- 1.6.3 (Tested)
+- 1.6.1 (Tested)
+- 1.6.3 (Tested)
 
 -----------
 Description
@@ -71,9 +70,9 @@ Credits
 ---------
 Plugin based on https://github.com/KrzysztofKielce/q2a-backup
 
-Development sponsored by BuiltIntelligence_.
+Sponsored by BuiltIntelligence_.
 
-Development carried out by thisLiquidSpace_
+Development by thisLiquidSpace_
 
 .. _BuiltIntelligence: http://builtintelligence.com
 .. _thisLiquidSpace: http://thisliquidspace.com
