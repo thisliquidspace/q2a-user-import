@@ -9,6 +9,8 @@ Compatible with Q2A versions:
 - 1.6.1 (Tested)
 - 1.6.3 (Tested)
 
+Should be compatible with 1.6.x and more. If you have it working on a version let me know and I'll add it to the list.
+
 -----------
 Description
 -----------
